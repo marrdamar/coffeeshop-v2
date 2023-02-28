@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail-product</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/detail-product.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main class="detailproduct-container">
+        <section class="topbar">
+            <header class="left-topbar">
+                <img src="../assets/smkopi.png" alt="kopi" class="kopi">
+                Coffee Shop
+            </header>
+            <div class="mid-topbar">
+                <ul>
+                    <li class="pointer">Home</li>
+                    <li class="pointer active">Product</li>
+                    <li class="pointer">Your Cart</li>
+                    <li class="pointer">History</li>
+                </ul>
+            </div>
+            <div class="right-topbar">
+                <img src="../assets/product-css/searchlogo.svg" alt="search">
+                <img src="../assets/product-css/chatlogo.svg" alt="chat">
+                <img src="../assets/product-css/profilelogo.svg" alt="profile" class="profilelogo">
+            </div>
+        </section>
+        <section class="content-detail">
+            <p class="content-title">Favorite & Promo<b> > Cold Brew</b></p>
+            <div class="content-top">
+                <div class="coldbrew">
+                    <img src="../assets/product-css/list-product-img/coldbrew.png" alt="">
+                </div>
+                <div class="descproduct">
+                    <p class="product-title">COLD BREW</p>
+                    <p class="product-text">Cold brewing is a method of brewing that
+                        combines ground coffee and cool water and uses time instead of
+                        heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.
+                    </p>
+                    <p class="product-text">Delivery only on <b>Monday to friday</b> at <b>1 - 7 pm</b></p>
+
+                </div>
+            </div>
+            <div class="delivery-time">
+                <div class="delivery-card">
+                    <p class="delivery-title">Delivery and Time</p>
+                    <div class="btn-delivery">
+                        <button class="selected cursor btn-dlv">Dine In</button>
+                        <button class="cursor btn-dlv">Door Delivery</button>
+                        <button class="cursor btn-dlv">Pick Up</button>
+                    </div>
+                    <div class="now">
+                        <p class="now-text">Now</p>
+                        <button class="selected cursor btn-dlv">Yes</button>
+                        <button class="cursor btn-dlv">No</button>
+                    </div>
+                    <div class="set-time">
+                        <p class="set">Set Time</p>
+                        <input type="text" class="resertime" placeholder="Enter time for reservation" />
+                    </div>
+                </div>
+                <div class="right-detail">
+                    <div class="qtyprice">
+                        <div class="qty-info">
+                            <form>
+                                <div class="value-btn" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                                </div>
+                                <input type="number" id="number" value="0" />
+                                <div class="value-btn" id="increase" onclick="increaseValue()" value="Increase Value">+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="detail-price">
+                            <p>IDR 35.000</p>
+                        </div>
+                    </div>
+                    <div class="button-trans">
+                        <button class="addtocart">Add to Cart</button>
+                        <button class="askastaff">Ask a Staff</button>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-container">
+                <div class="size">
+                    <p class="size-title">Choose a size</p>
+                    <div class="circleyellow">
+                        <div class="pointer rcup"></div>
+                        <div class="pointer lcup"></div>
+                        <div class="pointer xlcup"></div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <div class="coldbrewimg">
+                    </div>
+                    <div class="szcup">
+                        <p class="coldbrew-title">COLD BREW</p>
+                        <p class="sizecup">x1 (Large)</p>
+                        <p class="sizecup">x1 (Regular)</p>
+                    </div>
+                    <div class="co-circle">
+                        <p class="checkout-text">Checkout</p>
+                        <div class="co-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottombar-detail">
+            <div class="btmbar-left">
+                <img src="../assets/smkopi.png" alt="kopi" class="kopi">
+                Coffee Shop
+                <p class="textbwh">Coffee Shop is a store that sells some good meals, and especially coffee. We
+                    provide high quality beans.</p>
+                <a href=""><img src="../assets/fblogo.png" alt="" class="fb"></a>
+                <a href=""><img src="../assets/twitterlogo.png" alt="" class="twitter"></a>
+                <a href=""><img src="../assets/instagramlogo.png" alt="" class="instagram"></a>
+                <div class="copyright">©2020CoffeeStore</div>
+            </div>
+            <div class="btmbar-right">
+                <ul class="product-footer">
+                    <li class="title-footer">Product</li>
+                    <li>Download</li>
+                    <li>Pricing</li>
+                    <li>Locations</li>
+                    <li>Countries</li>
+                    <li>Blog</li>
+                </ul>
+                <ul class="engange-footer">
+                    <li class="title-footer">Engange</li>
+                    <li>Coffee Shop?</li>
+                    <li>FAQ</li>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

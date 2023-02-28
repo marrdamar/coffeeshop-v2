@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/detail-product.css">
+    <link rel="stylesheet" href="./css/history-product.css">
+    <script>
+        // global var
+        const base_url = window.location.origin;
+        const api_url = 'http://' + window.location.hostname + ":3004"
+    </script>
+</head>
+
+<body>
+    <main class="homepage-container">
+        <section class="topbar" id="topbar">
+            <header class="left-topbar">
+                <img src="../assets/smkopi.png"
+                    alt="kopi" class="kopi">
+                <a href="../index.html" class="kopititle">Coffee Shop</a>
+            </header>
+            <div class="mid-topbar" id="mid-topbar">
+                <ul>
+                    <li class="pointer" onclick="navHome()">Home</li>
+                    <li class="pointer" onclick="navProduct()">Product</li>
+                    <li class="pointer">Your Cart</li>
+                    <li class="pointer">History</li>
+                </ul>
+            </div>
+            <div class="right-topbar" id="right-topbar">
+                <img src="../assets/product-css/searchlogo.svg" alt="search">
+                <img src="../assets/product-css/chatlogo.svg" alt="chat">
+                <img src="../assets/product-css/profilelogo.svg" alt="profile" class="profilelogo">
+            </div>
+        </section>
+        <header id="navbar">
+            <nav class="navbar-container container">
+                <img src="../assets/smkopi.png" alt="kopi" class="kopi">
+                <div class="pointer kopititle" onclick="navHome()">Coffee Shop</div>
+              <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                  <li class="pointer navbar-item" onclick="navHome()">Home</li>
+                  <li class="pointer navbar-item" onclick="navProduct()">Product</li>
+                  <li class="pointer navbar-item" onclick="">Your Cart</li>
+                  <li class="pointer navbar-item" onclick="history_Product()">History</li>
+                  <button class="pointer signup" onclick="navSignUp()">Sign Up</button>
+                  <button class="login" onclick="navLogin()">Login</button>x
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+        <div id="content">
+
+        </div>
+
+        <section class="bottombar-profile">
+            <div class="one-footer">
+                <img src="./assets/smkopi.png" alt="kopi" class="kopi">
+                Coffee Shop
+                <p class="textbwh">Coffee Shop is a store that sells some good meals, and especially coffee. We
+                    provide high quality beans.</p>
+                <a href=""><img src="../assets/fblogo.png" alt="" class="fb"></a>
+                <a href=""><img src="../assets/twitterlogo.png" alt="" class="twitter"></a>
+                <a href=""><img src="../assets/instagramlogo.png" alt="" class="instagram"></a>
+                <div class="copyright">©2020CoffeeStore</div>
+            </div>
+            <div class="two-footer">
+                <ul class="left-profilefooter">
+                    <li class="title-footer">Product</li>
+                    <li>Download</li>
+                    <li>Pricing</li>
+                    <li>Locations</li>
+                    <li>Countries</li>
+                    <li>Blog</li>
+                </ul>
+                <ul class="right-engangefooter">
+                    <li class="title-footer">Engange</li>
+                    <li>Coffee Shop?</li>
+                    <li>FAQ</li>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <!-- <script src="./js/auth.js"></script> -->
+    <script type="text/javascript" src="../node_modules/crypto-js/crypto-js.js"></script>
+    <script src="./js/apps.js"></script>
+</body>
+
+</html>

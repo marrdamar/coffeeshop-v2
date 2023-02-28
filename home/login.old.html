@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <main class="flex-container">
+
+        <section class="left">
+            <img src="../assets/background.jpg" alt="cover" class="cover">
+        </section>
+
+        <section class="right">
+            <header class="r-header-login">
+                <div class="headTitle">
+                    <img src="../assets/smkopi.png"
+                    alt="kopi" class="kopi">
+                    <div class="pointer kopititle" onclick="navHome()">Coffee Shop</div>
+                    <div class="pointer signup" onclick="navSignUp()">Sign Up</div>
+                </div>
+            </header>
+
+            <div class="right-content">
+                <p class="formtxt">Email Adress : </p>
+                <form method="post" action="">
+                    <input type="email" placeholder="Enter your email address" id="email">
+                    <p class="formtxt">Password : </p>
+                    <input type="password" placeholder="Enter your password">
+                    <a href="./forgotpass.html" class="forgotpass">Forgot password? </a>
+                    <br>
+                    <br>
+                    <button class="login" onclick="getUser()">Login</button><br><br>
+                    <button class="google"> <img src="../assets/google.png" class="imggoogle"> Sign Up with Google</button>    
+                </form>
+                <br>
+                <br>
+                <div class="underline">
+                    <div class="border-left"></div>&nbsp;
+                    <p>Don't have an account?</p>&nbsp;
+                    <div class="border-right"></div>
+                </div>
+                <a href="./index.html"><button class="loginhere">Sign Up Here</button></a>
+            </div>
+
+            <div class="right-footer">
+                <div class="one-footer">
+                    <img src="../assets/smkopi.png" alt="kopi" class="kopi">
+                    Coffee Shop
+                    <p class="textbwh">Coffee Shop is a store that sells some good meals, and especially coffee. We
+                        provide high quality beans.</p>
+                    <a href=""><img src="../css/fblogo.png" alt="" class="fb"></a>
+                    <a href=""><img src="../css/twitterlogo.png" alt="" class="twitter"></a>
+                    <a href=""><img src="../css/instagramlogo.png" alt="" class="instagram"></a>
+                    <div class="copyright">©2020CoffeeStore</div>
+                </div>
+                <div class="two-footer">
+                    <ul>
+                        <li class="product">Product</li>
+                    </ul>
+                    <ul class="left-product">
+                        <li><a href="">Download</li>
+                        <li><a href="">Pricing</li>
+                    </ul>
+                    <ul class="left-product">
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">Countries</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li class="engange">Engange</li>
+                    </ul>
+                    <ul class="left-engange">
+                        <li><a href="">Coffee Shop?</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                    <ul class="left-engange">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/auth.js"></script>
+<script src="../js/apps.js"></script>
+</body>
+
+</html>
